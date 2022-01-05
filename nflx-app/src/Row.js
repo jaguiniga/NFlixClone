@@ -6,19 +6,19 @@ import movieTrailer from "movie-trailer";
 
 const base_url = "https://image.tmdb.org/t/p/original/";
 
-function Row({ title, fetchURL, isLargeRow }) {
+function Row({ title, fetchUrl, isLargeRow }) {
     const [movies, setMovies] = useState([]);
     const [trailerUrl, setTrailerUrl] = useState("");
     
     // conditional snippet
     useEffect(() => {
         async function fetchData() {
-            const request = await axios.get(fetchURL);
+            const request = await axios.get(fetchUrl);
             setMovies(request.data.results);
             return request;
         }
         fetchData();
-    }, [fetchURL]);
+    }, [fetchUrl]);
 
     const opts = {
       height: "390", 
@@ -36,7 +36,7 @@ function Row({ title, fetchURL, isLargeRow }) {
         movieTrailer(movie?.name || "")
         .then((url) => {
           const urlParams = new URLSearchParams(new URL(url).search);
-          setTrailerUrl(urlParams.get('v'));
+          setTrailerUrl(urlParams.get("v"));
         })
         .catch((error) => console.log(error));
       }
