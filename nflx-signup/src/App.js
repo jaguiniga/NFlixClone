@@ -1,15 +1,12 @@
 import React from 'react';
 import './App.css';
-import Nav from "./Nav";
-import Main from "./Main";
-
-
+import Form from './Form';
+import FormSignup from './FormSignup';
 
 function App() {
   return (
-    <div className="app">
-      <Nav />
-      <Main />
+    <div className="App">
+      <Form />
     </div>
   );
 }

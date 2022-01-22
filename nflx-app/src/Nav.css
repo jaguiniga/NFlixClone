@@ -26,3 +26,10 @@
   width: 30px;
   object-fit: contain;
 }
+
+.nav_key {
+  position: fixed;
+  right: 50px;
+  width: 30px;
+  object-fit: contain;
+}
