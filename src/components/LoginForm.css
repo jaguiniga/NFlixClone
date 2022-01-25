@@ -1,0 +1,34 @@
+.login_form {
+  padding: 0;
+  box-sizing: border-box;
+  width: 400px;
+  margin: 0 auto;
+  background-color: red;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nav_button1 {
+  text-align: center;
+  border: 4px solid #9e3623;
+  font-size: 20px;
+  background: #faf8f8;
+  color: rgb(20, 23, 24);
+  font-weight: 500;
+  transition: box-shadow 0.5s ease-in-out, border-color 0.5s ease-in-out;
+  border-radius: 25px;
+}
+
+.nav_button1:focus {
+  color: rgba(255, 64, 0, 0.993);
+  border: 1px solid #1fec04;
+  box-shadow: 0 0 20px #ffffff;
+}
+
+.form_text {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}

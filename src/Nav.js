@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Nav.css';
+import LoginForm from './components/LoginForm';
+import { NavLink, useNavigate  } from "react-router-dom";
 
 function Nav() {
     const [show, handleShow] = useState(false);
@@ -15,6 +17,8 @@ function Nav() {
         };
     }, []);
 
+    
+
     return (
         <div className={`nav ${show && "nav_black"}`}>
             <img 
@@ -23,11 +27,21 @@ function Nav() {
               alt="Netflix Logo"
             />
             
+            <NavLink to="/login">
             <img
               className="nav_avatar"
               src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png" 
-              alt="Netflix Logo"
+              alt="Netflix Logo" 
             />
+            </NavLink>
+
+            <NavLink to="/main">
+                <button
+                    className="nav_button">
+                    Main
+                </button>
+            </NavLink>
+          
             
         </div>
     )
