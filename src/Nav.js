@@ -19,11 +19,13 @@ function Nav() {
 
   return (
     <div className={`nav ${show && "nav_black"}`}>
-      <img
-        className="nav_logo"
-        src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"
-        alt="Netflix Logo"
-      />
+      <NavLink to="/main">
+        <img
+          className="nav_logo"
+          src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"
+          alt="Netflix Logo"
+        />
+      </NavLink>
 
       <NavLink to="/login">
         <img
@@ -37,9 +39,9 @@ function Nav() {
         <button className="nav_button_two">Signup</button>
       </NavLink>
 
-      <NavLink to="/main">
+      {/* <NavLink to="/main">
         <button className="nav_button">Main</button>
-      </NavLink>
+      </NavLink> */}
     </div>
   );
 }
