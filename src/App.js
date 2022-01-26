@@ -4,6 +4,7 @@ import Nav from "./Nav";
 import LoginForm from "./components/LoginForm";
 import { Route, Routes } from "react-router-dom";
 import Main from "./components/Main";
+import Signup from "./components/Signup";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path="/" />
         <Route path="/login" element={<LoginForm />} />
+        <Route path="/signup" element={<Signup />} />
         <Route path="/main" element={<Main />} />
       </Routes>
     </div>
