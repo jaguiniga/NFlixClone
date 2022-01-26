@@ -34,7 +34,7 @@ function Nav() {
       </NavLink>
 
       <NavLink to="/signup">
-        <button className="nav_button">Signup</button>
+        <button className="nav_button_two">Signup</button>
       </NavLink>
 
       <NavLink to="/main">
