@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Nav.css";
 // import LoginForm from "./components/LoginForm";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Nav() {
   const [show, handleShow] = useState(false);
