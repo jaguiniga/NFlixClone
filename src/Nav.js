@@ -33,6 +33,10 @@ function Nav() {
         />
       </NavLink>
 
+      <NavLink to="/signup">
+        <button className="nav_button">Signup</button>
+      </NavLink>
+
       <NavLink to="/main">
         <button className="nav_button">Main</button>
       </NavLink>
