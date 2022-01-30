@@ -24,50 +24,55 @@ function LoginForm() {
   };
 
   return (
-    <div className="login_form">
-      <form onSubmit={submitHandler}>
-        <div>
-          <h1 className="form_text">Login</h1>
-          {/* ERROR */}
-          <div className="form_text ">
-            <label htmlFor="name"> Name: </label>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              onChange={(e) => setDetails({ ...details, name: e.target.value })}
-              value={details.name}
-            />
-          </div>
-
-          <div className="form_text ">
-            <label htmlFor="email"> Email: </label>
-            <input
-              type="password"
-              name="email"
-              id="email"
-              onChange={(e) =>
-                setDetails({ ...details, email: e.target.value })
-              }
-              value={details.email}
-            />
-          </div>
-
-          <div className="form_text ">
-            <label htmlFor="password"> Password: </label>
-            <input
-              type="password"
-              name="password"
-              id="password"
-              onChange={(e) =>
-                setDetails({ ...details, password: e.target.value })
-              }
-              value={details.password}
-            />
-          </div>
-
-          <input className="nav_button1" type="submit" value="LOGIN" />
+    <div className="login-form">
+      <form class="form" onSubmit={submitHandler}>
+        <h1>Netflix Clone Account Login</h1>
+        {/* ERROR */}
+        <div className="form-text ">
+          <label for="name" class="form-label">
+            Name
+          </label>
+          <input
+            id="username"
+            type="text"
+            name="username"
+            class="form-input"
+            onChange={(e) => setDetails({ ...details, name: e.target.value })}
+            value={details.username}
+          />
         </div>
+
+        <div className="form-text ">
+          <label for="email" class="form-label">
+            E-mail
+          </label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            class="form-input"
+            onChange={(e) => setDetails({ ...details, email: e.target.value })}
+            value={details.email}
+          />
+        </div>
+
+        <div className="form-text ">
+          <label for="password" class="form-label">
+            Password
+          </label>
+          <input
+            id="password"
+            type="password"
+            name="password"
+            class="form-input"
+            onChange={(e) =>
+              setDetails({ ...details, password: e.target.value })
+            }
+            value={details.password}
+          />
+        </div>
+
+        <input className="nav-button1" type="submit" value="Log me in!" />
       </form>
     </div>
   );
