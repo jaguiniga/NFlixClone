@@ -25,7 +25,14 @@
   right: 20px;
   width: 30px;
   object-fit: contain;
-  border-radius: 10px;
+  border-radius: 11px;
+}
+
+.nav_avatar:hover {
+  color: #000;
+  background-color: #e6e6e6;
+  transition: all 0.2s;
+  transform: scale(1.3);
 }
 
 .nav_button {
@@ -45,7 +52,31 @@
   right: 60px;
 }
 
+.nav_button_two {
+  cursor: pointer;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-weight: 700;
+  border-radius: 0.2vw;
+  object-fit: contain;
+  margin-right: 0.2rem;
+  padding-top: 0.5rem;
+  background-color: rgba(51, 51, 51, 0.5);
+  padding-bottom: 0.5rem;
+  width: 60px;
+  position: fixed;
+  right: 60px;
+}
+
 .nav_button:hover {
+  color: #000;
+  background-color: #e6e6e6;
+  transition: all 0.2s;
+  transform: scale(1.15);
+}
+
+.nav_button_two:hover {
   color: #000;
   background-color: #e6e6e6;
   transition: all 0.2s;

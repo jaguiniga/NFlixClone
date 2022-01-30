@@ -1,30 +1,22 @@
-import React from 'react';
-import './App.css';
-import requests from './requests';
-import Row from './Row';
-import Banner from './Banner';
+import React from "react";
+import "./App.css";
 import Nav from "./Nav";
-import LoginForm from './components/LoginForm';
-import { Route, Routes, BrowserRouter} from 'react-router-dom';
-import Practice from './components/Practice';
-import Main from './components/Main';
-
+import LoginForm from "./components/LoginForm";
+import { Route, Routes } from "react-router-dom";
+import Main from "./components/Main";
+import Signup from "./components/Signup";
 
 function App() {
   return (
     <div className="app">
-      
-
       <Nav />
-      
-      <Routes>
-        <Route path="/" />
-        <Route path="/login" element = { <LoginForm/> } />
-        <Route path="/main" element = { <Main/>} />
-      </Routes>
-      
-     
 
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/login" element={<LoginForm />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/main" element={<Main />} />
+      </Routes>
     </div>
   );
 }
