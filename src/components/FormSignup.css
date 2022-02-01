@@ -126,7 +126,7 @@
   font-size: 1rem;
 }
 
-.form-input-btn::hover {
+.form-input-btn:hover {
   cursor: pointer;
   background: linear-gradient(
     90deg,

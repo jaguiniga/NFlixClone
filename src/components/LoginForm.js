@@ -14,9 +14,7 @@ function LoginForm() {
     Login(details);
   };
 
-  const Login = (details) => {
-    console.log(details);
-  };
+  const Login = () => {};
 
   const Logout = () => {
     setUser({ name: "", email: "" });
@@ -30,13 +28,14 @@ function LoginForm() {
         {/* ERROR */}
         <div className="form-text ">
           <label for="name" class="form-label">
-            Name
+            Username
           </label>
           <input
             id="username"
             type="text"
             name="username"
             class="form-input"
+            placeholder="Enter your username"
             onChange={(e) => setDetails({ ...details, name: e.target.value })}
             value={details.username}
           />
@@ -51,6 +50,7 @@ function LoginForm() {
             type="email"
             name="email"
             class="form-input"
+            placeholder="Enter your E-mail address"
             onChange={(e) => setDetails({ ...details, email: e.target.value })}
             value={details.email}
           />
@@ -65,6 +65,7 @@ function LoginForm() {
             type="password"
             name="password"
             class="form-input"
+            placeholder="Enter your password"
             onChange={(e) =>
               setDetails({ ...details, password: e.target.value })
             }
@@ -73,6 +74,10 @@ function LoginForm() {
         </div>
 
         <input className="nav-button1" type="submit" value="Log me in!" />
+        <span class="form-input-login">
+          Don't have an account? Signup
+          <a href="http://localhost:3000/signup"> here</a>
+        </span>
       </form>
     </div>
   );

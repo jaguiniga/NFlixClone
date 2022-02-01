@@ -10,20 +10,35 @@
 }
 
 .nav-button1 {
-  text-align: center;
-  border: 4px solid #9e3623;
-  font-size: 20px;
-  background: #faf8f8;
-  color: rgb(20, 23, 24);
-  font-weight: 500;
-  transition: box-shadow 0.5s ease-in-out, border-color 0.5s ease-in-out;
-  border-radius: 25px;
+  width: 80%;
+  height: 50px;
+  margin-top: 10px;
+  border-radius: 2px;
+  background: linear-gradient(
+    90deg,
+    rgb(39, 176, 255) 0%,
+    rgb(0, 232, 236) 100%
+  );
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
 }
 
 .nav-button1:focus {
-  color: rgba(255, 64, 0, 0.993);
-  border: 1px solid #1fec04;
+  color: #fff;
+  border: 1px solid #fff;
   box-shadow: 0 0 20px #ffffff;
+}
+
+.nav-button1:hover {
+  cursor: pointer;
+  background: linear-gradient(
+    90deg,
+    rgb(39, 143, 255) 0%,
+    rgb(12, 99, 250) 100%
+  );
+  transition: all 0, 4s ease-out;
 }
 
 .form-text {
@@ -58,4 +73,20 @@
   font-size: 0.8rem;
   margin-bottom: 6px;
   color: #fff;
+}
+
+.form-input {
+  display: block;
+  width: 100%;
+  padding-left: 10px;
+  outline: none;
+  height: 40px;
+  border: 1px solid rebeccapurple;
+  border-radius: 20px;
+  background-color: whitesmoke;
+}
+
+.form-input::placeholder {
+  color: #595959;
+  font-size: 12px;
 }

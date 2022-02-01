@@ -81,8 +81,8 @@ const FormSignup = ({ submitForm }) => {
           Sign up
         </button>
         <span class="form-input-login">
-          Already have an account? Login{" "}
-          <a href="https://github.com/jurgden">here</a>
+          Already have an account? Login
+          <a href="http://localhost:3000/login"> here</a>
         </span>
       </form>
     </div>
